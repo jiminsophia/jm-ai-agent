@@ -3,6 +3,13 @@ from langchain_openai import ChatOpenAI
 
 chat_model= ChatOpenAI(model= "gpt-4.1-nano")
 
+### BaseMessage 를 상속받은 클래스를 사용
+# SystemMessage: 시스템 역할 지정, 페르소나 지정에 사용
+# HumanMessage: 사용자의 입력이나 질문
+# AIMessage: 채팅 모델의 응답에 사용
+# ToolMessage: 도구 호출의 결과를 AI에 전달할 때 사용
+# 이외에도 이름 뒤에 Chunk가 있다면? 스트리밍에서 사용한다는 의미임
+
 messages= [
     SystemMessage(
         content="당신은 사용자의 질문에 간결하고 명확하게 답변하는 AI도우미 입니다."
