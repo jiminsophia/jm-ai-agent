@@ -8,8 +8,8 @@ class RealtimeWebRag:
     """실시간 웹 검색을 활용하는 RAG"""
 
     def __init__(self): 
-        self.search= DuckDuckGoSearchResults()
-        self.llm= ChatOpenAI(temperature=0)
+        self.search= DuckDuckGoSearchResults() #웹 검색 기능 초기화
+        self.llm= ChatOpenAI(temperature=0) #LLM 초기화 및 온도 0 설정
 
         message= """웹에서 검색한 최신 정보를 바탕으로 답변하세요.
         
