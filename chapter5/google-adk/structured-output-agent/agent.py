@@ -6,7 +6,7 @@ class BookRecommendation(BaseModel):
     author: str= Field(description= "저자")
     genre: str= Field(description= "장르")
     reason: str= Field(description= "추천 이유")
-    rating= float= Field(description= "평점 (1-5)")
+    rating: float= Field(description= "평점 (1-5)")
 
 # 출력 스키마 정의
 class BookList(BaseModel): 
