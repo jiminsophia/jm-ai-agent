@@ -9,7 +9,10 @@ def greet_user() -> str:
 # 실행 방법은 총 3가지: 1) adk web (web UI) 
 #                   2) adk run (terminal) 
 #                   3) adk api_server (FastAPI server)
-# agent.py가 저장된 디렉토리의 상위 디렉토리로 이동한 뒤 터미널에서 실행 (이 경우 chapter5/google-adk 에서 실행)
+# agent.py가 저장된 디렉토리의 상위 디렉토리로 이동한 뒤 터미널에서 아래 명령어 실행 (이 경우 chapter5/google-adk 에서 실행)
+#    방법1. adk web                 # localhost에서 연 뒤 하위폴더의 여러 agent 중 선택
+#    방법2. adk run hello-agent     # agent 폴더명
+#    방법3. adk api_server          # 이거 어떻게 하란건지 아직 모르겟음
 root_agent= Agent(
     name= 'hello_agent', 
     model= 'gemini-2.5-flash', 
